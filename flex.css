@@ -1,0 +1,35 @@
+.flex-container {
+    display: flex;
+    /* כל אלמנט שאין לו מספיק מקום ברוחב - יורד שורה */
+    /* flex-wrap: wrap; */
+    width: 1000px;
+    background-color: black;
+    /* flex-direction: column; */
+     /*משמשים ליישור האלמנטים הפנימיים*/
+  /* align-items: center;
+     justify-content: center; */
+     /*  יישור השורות*/
+     /*   align-content: space-between; */
+    height: 150px;
+}
+
+.flex-item{
+    width: 500px;
+    height: 20px;
+    background-color: blue;
+    border-style: solid;
+
+    /* סידור האלמנטים  */
+    /* order: 3; */
+    /*  קובע את גודל האלמנט ביחס לשאר*/
+    /* flex-grow: 1 */
+    /* מגדיר יישור עבור אלמנט ספציפי ומבטל את מה שהוגדר בקונטיינר האבא */
+    /* "align-self: center; */
+
+}
+
+@media (max-width: 800px){
+    .flex-container{
+        flex-wrap: wrap;
+    }
+}

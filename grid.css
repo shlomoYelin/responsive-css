@@ -1,0 +1,21 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 80px 200px auto 40px;/* כמות העמודות לפי כמות הפרמטרים פה */
+    background-color: crimson;
+    padding: 10px;
+    gap: 10px;
+}
+
+.grid-item{
+    background-color: darkgreen;
+    /*  מגדיר עבור פריט ספציפי את טווח העמודות שיתפוס*/
+    /* grid-column: 1 / 5; */
+    /*  כנל רק עם שורות*/
+    /*   grid-row: 1 / 4; */
+}
+
+@media (max-width: 800px){
+    .grid-container{
+    grid-template-columns: 80px 200px;
+    }
+}
